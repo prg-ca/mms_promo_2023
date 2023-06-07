@@ -1,0 +1,171 @@
+body,
+body * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: 700;
+  color: #ffcc00;
+}
+.container {
+  position: absolute;
+  width: 728px;
+  height: 90px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #ffcc00;
+  border: 1px #552100 solid;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.el {
+  position: absolute;
+  /*width: 60px;*/
+  left: 0;
+  top: 0;
+}
+
+#lines {
+  width: 900px;
+  height: 400px;
+  left: -50px;
+  top: -123px;
+  transform: rotate(-9deg);
+  /* background: green; */
+}
+
+#line01 {
+  width: 900px;
+  height: 110px;
+  background-color: #552100;
+  left: 0;
+  top: 0px;
+}
+#line02 {
+  width: 900px;
+  height: 10px;
+  background-color: #ffcc00;
+  left: 0;
+  top: 110px;
+}
+#line03 {
+  width: 900px;
+  height: 10px;
+  background-color: #ee2e24;
+  left: 0;
+  top: 120px;
+}
+#line04 {
+  width: 900px;
+  height: 10px;
+  background-color: #f36f21;
+  left: 0;
+  top: 130px;
+}
+#line05 {
+  width: 900px;
+  height: 10px;
+  background-color: #552100;
+  left: 0;
+  top: 140px;
+}
+#line06 {
+  width: 900px;
+  height: 10px;
+  background-color: #ee2e24;
+  left: 0;
+  top: 150px;
+}
+#line07 {
+  width: 900px;
+  height: 10px;
+  background-color: #f36f21;
+  left: 0;
+  top: 160px;
+}
+
+#slogan {
+  width: 180px;
+  left: 6px;
+  top: 2px;
+}
+
+#txt01, #txt02 {
+  width: 354px;
+  left: 211px;
+  top: 8px;
+}
+#txt03 {
+  width: 293px;
+  left: 242px;
+  top: 46px;
+}
+
+#btn {
+  width: 202px;
+  left: 263px;
+  top: 46px;
+}
+
+#heroes {
+  width: 118px;
+  left: 589px;
+  top: -2px;
+}
+
+#prizes {
+  top: 3px;
+}
+
+#laptop {
+  width: 119px;
+  left: 531px;
+  top: 9px;
+}
+#iphone {
+  width: 33px;
+  left: 545px;
+  top: 29px;
+}
+#playstation1 {
+  width: 33px;
+  left: 680px;
+  top: 50px;
+}
+#playstation2 {
+  width: 38px;
+  left: 657px;
+  top: -2px;
+}
+#tablet {
+  width: 57px;
+  left: 606px;
+  top: 28px;
+}
+
+
+
+
+
+#schirm {
+  position: absolute;
+  width: 728px;
+  height: 90px;
+  top: 0;
+  left: 0;
+  background-color: #ffcc00;
+  background-size: cover;
+  opacity: 0;
+}

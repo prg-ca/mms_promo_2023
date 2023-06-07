@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta name="ad.size" content="width=300,height=600" />
+    <meta name="ad.size" content="width=240,height=400" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_2.0.1_min.js"></script>
@@ -13,14 +13,13 @@
         TweenLite.ticker.useRAF(false);
         TweenLite.lagSmoothing(0);
         var tl = new TimelineMax({ repeat: 2, repeatDelay: 5});
-
         tl.from("#schirm", 0.3, { autoAlpha: 1 })
           .from("#heroes", 0.5, {opacity: 0, scale: 0.7, y: 500}, '-=.1')
           .staggerFromTo(".line", 0.4, {x: -500}, {x: 0}, -0.1, "-=0.3")
           .from("#txt01", 0.3, {opacity: 0, y: 50}, "-=0.5")
           .from("#txt02", 0.3, {opacity: 0, y: 20}, "-=0.3")
           .from("#txt03", 0.3, {opacity: 0, y: 20}, "-=0.1")
-          .from("#slogan", 0.4, {scale: 0.4, x: -220, y: 50}, '-=.1')
+          .from("#slogan", 0.4, {scale: 0.4, x: -180, y: 30}, '-=.1')
           .from("#btn", 0.3, {opacity: 0, scale: 1.2}, "-=0.1")
           .to("#btn", 0.3, {scale: 1.1}, "+=0.7")
           .to("#btn", 0.3, {scale: 1})
@@ -29,7 +28,7 @@
           .from("#iphone", 0.4, {x: 120}, "-=0.1")
           .from("#playstation1", 0.4, {x: -300}, "-=0.1")
           .from("#playstation2", 0.4, {x: -300}, "-=0.3")
-          .from("#tablet", 0.4, {x: 260}, "-=0.36")
+          .from("#tablet", 0.4, {x: 260}, "-=0.1")
           .to("#btn", 0.3, {scale: 1.1}, "+=0.7")
           .to("#btn", 0.3, {scale: 1})
           .to("#btn", 0.3, {scale: 1.1}, "+=0.8")
