@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="ad.size" content="width=728,height=90" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_2.0.1_min.js"></script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_2.0.1_min.js"></script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/timelinemax_2.0.1_min.js"></script>
+    <script>
+      var clickTag = "#";
+      document.addEventListener("DOMContentLoaded", function (event) {
+        TweenLite.ticker.useRAF(false);
+        TweenLite.lagSmoothing(0);
+        var tl = new TimelineMax({ repeat: 2, repeatDelay: 2});
+
+        tl.from("#schirm", 0.3, { autoAlpha: 1 })
+          .from("#heroes", 0.5, {opacity: 0, scale: 0.7, y: 100}, '-=.1')
+          .staggerFromTo(".line", 0.4, {x: -900}, {x: 0}, -0.1, "-=0.3")
+          .from("#slogan", 0.4, {scale: 0.4, x: -180, y: 30}, '-=.4')
+          .from("#txt01", 0.3, {opacity: 0, y: -50}, "-=0.5")
+          .from("#txt02", 0.3, {opacity: 0, y: -50}, "-=0.3")
+          .from("#txt03", 0.3, {opacity: 0, y: -50}, "-=0.1")
+          .from("#btn", 0.3, {opacity: 0, scale: 1.2, y: 50}, "-=0.3")
+          .to("#btn", 0.3, {scale: 1.1}, "+=0.7")
+          .to("#btn", 0.3, {scale: 1})
+          .to("#heroes", 0.3, {opacity: 0, y: 100}, "+=1")
+          .to("#txt01", 0.3, {x: -30}, "-=0.3")
+          .to("#txt02", 0.3, {x: -30}, "-=0.3")
+          .to("#txt03", 0.3, {x: -30}, "-=0.3")
+          .to("#btn", 0.3, {x: -30}, "-=0.3")
+          .from("#laptop", 0.4, { x: 200}, "-=0.25")
+          .from("#iphone", 0.4, { x: 220}, "-=0.1")
+          .from("#tablet", 0.4, {x: 260}, "-=0.1")
+          .from("#playstation2", 0.4, { x: 200}, "-=0.1")
+          .from("#playstation1", 0.4, { x: 200}, "-=0.1")
+          .to("#btn", 0.3, {scale: 1.1}, "+=0.7")
+          .to("#btn", 0.3, {scale: 1})
+          .to("#btn", 0.3, {scale: 1.1}, "+=0.7")
+          .to("#btn", 0.3, {scale: 1})
+      });
+    </script>
+  </head>
+  <body>
+    <a href="javascript:window.open(window.clickTag)">
+      <div class="container">
+        <div id="lines" class="el">
+          <div class="line el" id="line07"></div>
+          <div class="line el" id="line06"></div>
+          <div class="line el" id="line05"></div>
+          <div class="line el" id="line04"></div>
+          <div class="line el" id="line03"></div>
+          <div class="line el" id="line02"></div>
+          <div class="line el" id="line01"></div>
+        </div>
+        <div id="slogan" class="el">
+          <img src="slogan.svg" />
+        </div>
+        <div id="txt01" class="el txt">
+          <img src="txt01.svg" />
+        </div>
+        <div id="txt02" class="el txt">
+          <img src="txt02.svg" />
+        </div>
+        <div id="txt03" class="el txt">
+          <img src="txt03.svg" />
+        </div>
+        <div id="btn" class="el">
+          <img src="btn.svg" />
+        </div>
+        <div id="heroes" class="el">
+          <img src="heroes.png"/>
+        </div>
+        <div id="prizes" class="el">
+          <div id="laptop" class="el prize">
+            <img src="laptop.png"/>
+          </div>
+          <div id="iphone" class="el prize">
+            <img src="iphone.png"/>
+          </div>
+          <div id="playstation1" class="el prize">
+            <img src="playstation1.png"/>
+          </div>
+          <div id="playstation2" class="el prize">
+            <img src="playstation2.png"/>
+          </div>
+          <div id="tablet" class="el prize">
+            <img src="tablet.png"/>
+          </div>
+        </div>
+        <div id="schirm"></div>
+      </div>
+    </a>
+  </body>
+</html>
